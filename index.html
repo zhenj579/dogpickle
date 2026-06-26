@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dogpickle</title>
+  <meta name="description" content="An AI-imagined dog combined with a pickle." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>🐶 Dogpickle 🥒</h1>
+
+    <figure class="dogpickle">
+      <svg viewBox="0 0 320 420" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+        <title id="title">Dogpickle</title>
+        <desc id="desc">A cartoon dog whose body is a green pickle, with floppy ears, paws, and a wagging tail.</desc>
+
+        <defs>
+          <linearGradient id="pickleBody" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#9acb3c" />
+            <stop offset="55%" stop-color="#6fae27" />
+            <stop offset="100%" stop-color="#4f8b16" />
+          </linearGradient>
+          <radialGradient id="cheek" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ff8aa0" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#ff8aa0" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <!-- shadow -->
+        <ellipse cx="160" cy="398" rx="78" ry="14" fill="#000" opacity="0.12" />
+
+        <!-- tail -->
+        <path d="M236 250 q48 -6 40 -52 q-4 30 -34 30 q14 -22 4 -40 q-6 34 -34 40 z"
+              fill="url(#pickleBody)" stroke="#3f7411" stroke-width="3" stroke-linejoin="round" />
+
+        <!-- back paws -->
+        <ellipse cx="120" cy="392" rx="26" ry="16" fill="#6fae27" stroke="#3f7411" stroke-width="3" />
+        <ellipse cx="200" cy="392" rx="26" ry="16" fill="#6fae27" stroke="#3f7411" stroke-width="3" />
+
+        <!-- pickle body -->
+        <rect x="78" y="120" width="164" height="262" rx="82"
+              fill="url(#pickleBody)" stroke="#3f7411" stroke-width="4" />
+
+        <!-- pickle bumps -->
+        <g fill="#bfe06a" opacity="0.85">
+          <circle cx="118" cy="180" r="7" /><circle cx="150" cy="160" r="6" />
+          <circle cx="188" cy="185" r="7" /><circle cx="210" cy="220" r="6" />
+          <circle cx="110" cy="240" r="6" /><circle cx="160" cy="250" r="7" />
+          <circle cx="200" cy="285" r="6" /><circle cx="125" cy="300" r="7" />
+          <circle cx="175" cy="320" r="6" /><circle cx="145" cy="350" r="6" />
+        </g>
+        <!-- bump centers -->
+        <g fill="#3f7411" opacity="0.45">
+          <circle cx="118" cy="180" r="2" /><circle cx="150" cy="160" r="2" />
+          <circle cx="188" cy="185" r="2" /><circle cx="210" cy="220" r="2" />
+          <circle cx="110" cy="240" r="2" /><circle cx="160" cy="250" r="2" />
+          <circle cx="200" cy="285" r="2" /><circle cx="125" cy="300" r="2" />
+          <circle cx="175" cy="320" r="2" /><circle cx="145" cy="350" r="2" />
+        </g>
+
+        <!-- ears -->
+        <path d="M86 118 q-40 6 -42 64 q-2 34 30 40 q-8 -52 30 -78 z"
+              fill="#6b4a2b" stroke="#4a3119" stroke-width="3" stroke-linejoin="round" />
+        <path d="M234 118 q40 6 42 64 q2 34 -30 40 q8 -52 -30 -78 z"
+              fill="#6b4a2b" stroke="#4a3119" stroke-width="3" stroke-linejoin="round" />
+
+        <!-- cheeks -->
+        <circle cx="108" cy="205" r="22" fill="url(#cheek)" />
+        <circle cx="212" cy="205" r="22" fill="url(#cheek)" />
+
+        <!-- eyes -->
+        <circle cx="130" cy="178" r="15" fill="#fff" stroke="#3f7411" stroke-width="2" />
+        <circle cx="190" cy="178" r="15" fill="#fff" stroke="#3f7411" stroke-width="2" />
+        <circle cx="133" cy="181" r="8" fill="#23150a" />
+        <circle cx="193" cy="181" r="8" fill="#23150a" />
+        <circle cx="136" cy="178" r="2.6" fill="#fff" />
+        <circle cx="196" cy="178" r="2.6" fill="#fff" />
+
+        <!-- snout -->
+        <ellipse cx="160" cy="220" rx="34" ry="26" fill="#e9f4c8" stroke="#3f7411" stroke-width="2.5" />
+        <ellipse cx="160" cy="208" rx="13" ry="9" fill="#23150a" />
+        <path d="M160 217 v12" stroke="#23150a" stroke-width="3" stroke-linecap="round" />
+        <path d="M160 229 q-12 10 -22 2" fill="none" stroke="#23150a" stroke-width="3" stroke-linecap="round" />
+        <path d="M160 229 q12 10 22 2" fill="none" stroke="#23150a" stroke-width="3" stroke-linecap="round" />
+        <!-- tongue -->
+        <path d="M150 236 q10 18 20 0 z" fill="#ff6f91" stroke="#d94f72" stroke-width="2" stroke-linejoin="round" />
+      </svg>
+      <figcaption>A dog. A pickle. A <strong>dogpickle</strong>.</figcaption>
+    </figure>
+  </main>
+</body>
+</html>
